@@ -1,0 +1,254 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Roboto', sans-serif;
+  }
+  h1, h2 {
+    color: #333;
+  }
+  .card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  .card-header {
+    background-color: #fff;
+    border-bottom: none;
+    border-radius: 12px 12px 0 0;
+  }
+  .btn {
+    border-radius: 30px;
+    padding: 0.5rem 1.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .btn-success, .btn-primary, .btn-secondary {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  .btn-success:hover, .btn-primary:hover, .btn-secondary:hover {
+    background-color: #212529;
+    color: white;
+  }
+  .tab-button.active {
+    background-color: #0d6efd;
+    color: white;
+  }
+  .tab-button {
+    border: none;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+  }
+  .tab-button:hover {
+    background-color: #e9ecef;
+  }
+  .tab-content {
+    display: none;
+  }
+  .tab-content.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  table th, table td {
+    vertical-align: middle;
+  }
+  .table thead {
+    background-color: #0d6efd;
+    color: white;
+  }
+  .table tbody tr {
+    transition: background-color 0.3s ease;
+  }
+  .table tbody tr:hover {
+    background-color: #e9ecef;
+  }
+
+  .modal-body {
+    max-height: 400px;
+    overflow-y: auto;
+  }
+
+
+  /* Animación de aparición */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Efecto de hover para botones */
+.btn:hover {
+  background-color: #28a745;
+  transform: scale(1.05);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Animación de aparición para las tablas */
+.table tbody tr {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animación suave para las modales */
+.modal-content {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Botones con animación */
+.btn-success {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-success:hover {
+  transform: translateY(-3px);
+  background-color: #218838;
+}
+
+/* Estilo para la barra de búsqueda */
+input.form-control:focus {
+  box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+  border-color: #80bdff;
+}
+
+/* Sombra sutil para las tarjetas */
+.card {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Animación de aparición del título */
+h1 {
+  animation: fadeIn 1s ease-out;
+}
+
+/* Transición suave para modales */
+.modal.fade .modal-dialog {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.modal.fade.show .modal-dialog {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+/* Títulos con un toque moderno */
+h2 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #007bff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Títulos de secciones más destacables */
+h1 {
+  font-size: 2rem;
+  color: #343a40;
+}
+
+/* Colores de fondo y fuente */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Contenedor de las secciones para que estén una al lado de la otra */
+.contenido-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Espacio entre las columnas */
+}
+
+/* Cada sección (Propuestas y Recursos) ocupará un 48% del ancho disponible */
+.seccion {
+  width: 48%;
+}
+
+/* Para pantallas pequeñas (por ejemplo, móviles), las secciones se apilarán */
+@media (max-width: 768px) {
+  .contenido-row {
+    flex-direction: column;
+  }
+
+  .seccion {
+    width: 100%; /* Las secciones ocuparán el 100% del ancho en pantallas pequeñas */
+  }
+}
+
+/*/* Centrando el contenedor de Propuestas y Recursos */
+#propuestas, #recursos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#propuestaContainer, #recursoContainer {
+  width: 100%;
+  max-width: 600px; /* Limita el ancho de las tarjetas para centrarlas */
+  margin-top: 15px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+/* Estilos para las tarjetas de los registros */
+.card-registro {
+  background-color: #f8f9fa; /* Color de fondo claro */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+/* Efecto de expansión al pasar el cursor */
+.card-registro:hover {
+  transform: scale(1.05); /* Expande un poco */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-registro h5 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.card-registro p {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.card-registro .badge {
+  font-size: 0.9rem;
+}
+
+.centered-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centra horizontalmente */
+  gap: 1rem; /* Espacio entre las tarjetas */
+}
+
+

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión de Eventos - Eventos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/Css/vistaeventos.css">
+</head>
+
+<body>
+
+    <div id="app" class="min-vh-100">
+        <!-- Barra de Navegación -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm mb-4">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="Pagina2">Sistema Gestión De Eventos</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="Pagina2">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index">Agendar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dashboart">Administración</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="asistentes">Asistentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="perfil"><img src="../assets/images/admin.png"  width="30"  alt="Perfil" class="rounded-circle"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Vista de Eventos -->
+        <div class="container" id="eventsView">
+            <div class="mb-4">
+                <h2 class="text-center text-primary">Eventos Disponibles</h2>
+            </div>
+            <div class="row g-4">
+                <!-- Generar eventos disponibles -->
+                <div class="col-md-4">
+                    <div class="card event-card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Evento 1</h5>
+                            <p class="card-text text-muted">Fecha: 2024-11-01</p>
+                            <p class="card-text text-muted">Ubicación: Sala 101</p>
+                            <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#event1Modal">Ver Detalles</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card event-card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Evento 2</h5>
+                            <p class="card-text text-muted">Fecha: 2024-11-02</p>
+                            <p class="card-text text-muted">Ubicación: Sala 102</p>
+                            <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#event2Modal">Ver Detalles</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card event-card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Evento 3</h5>
+                            <p class="card-text text-muted">Fecha: 2024-11-03</p>
+                            <p class="card-text text-muted">Ubicación: Sala 103</p>
+                            <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#event3Modal">Ver Detalles</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal para Evento 1 -->
+        <div class="modal fade" id="event1Modal" tabindex="-1" aria-labelledby="event1ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="event1ModalLabel">Detalles del Evento 1</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="../assets/images/evento 1.jpg" alt="Evento 1">
+                        <h6>Descripción:</h6>
+                        <p>Este es un evento donde se discutirán temas relevantes sobre la gestión de eventos.</p>
+                        <h6>Reunión a la que pertenece:</h6>
+                        <p>Reunión Anual de Planificación.</p>
+                        <button class="btn btn-success" onclick="inscribirse('Evento 1')">Inscribirse</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal para Evento 2 -->
+        <div class="modal fade" id="event2Modal" tabindex="-1" aria-labelledby="event2ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="event2ModalLabel">Detalles del Evento 2</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="../assets/images/Evento 2.jpg" alt="Evento 2">
+                        <h6>Descripción:</h6>
+                        <p>Este evento está dedicado a la capacitación sobre gestión de eventos.</p>
+                        <h6>Reunión a la que pertenece:</h6>
+                        <p>Reunión de Capacitación del Personal.</p>
+                        <button class="btn btn-success" onclick="inscribirse('Evento 2')">Inscribirse</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal para Evento 3 -->
+        <div class="modal fade" id="event3Modal" tabindex="-1" aria-labelledby="event3ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="event3ModalLabel">Detalles del Evento 3</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="../assets/images/Evento 3.jpg" alt="Evento 3">
+                        <h6>Descripción:</h6>
+                        <p>En este evento, se compartirán experiencias y mejores prácticas en la organización de eventos.</p>
+                        <h6>Reunión a la que pertenece:</h6>
+                        <p>Reunión de Evaluación y Mejora Continua.</p>
+                        <button class="btn btn-success" onclick="inscribirse('Evento 3')">Inscribirse</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        function inscribirse(evento) {
+            alert("Te has inscrito exitosamente en el " + evento);
+        }
+    </script>
+    <script src="../assets/Js/userData.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

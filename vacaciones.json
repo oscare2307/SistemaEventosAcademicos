@@ -1,0 +1,38 @@
+[
+  {
+    "id": 12,
+    "nombre": "Oscar Julian",
+    "apellido": "Escobar Camaño",
+    "fecha_inicial": "2024-11-14",
+    "fecha_final": "2024-11-06",
+    "descripcion": "Sala De conferencias",
+    "aula": "216"
+  },
+  {
+    "id": 14,
+    "nombre": "Manuel",
+    "apellido": "Cadrazo",
+    "fecha_inicial": "2024-11-05",
+    "fecha_final": "2024-11-06",
+    "descripcion": "ETC",
+    "aula": "216"
+  },
+  {
+    "id": 15,
+    "nombre": "Dainier ",
+    "apellido": "Corrales ",
+    "fecha_inicial": "2024-11-09",
+    "fecha_final": "2024-11-10",
+    "descripcion": "Soporte Tecnico",
+    "aula": "316"
+  },
+  {
+    "id": 16,
+    "nombre": "Sharon Melissa",
+    "apellido": "Diz Perez ",
+    "fecha_inicial": "2024-11-12",
+    "fecha_final": "2024-11-16",
+    "descripcion": "Sala De Auditoria",
+    "aula": "309"
+  }
+]

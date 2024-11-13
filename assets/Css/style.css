@@ -1,0 +1,47 @@
+
+        body {
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .navbar {
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link {
+            font-weight: bold;
+            color: gray;
+        }
+
+        .navbar-nav .nav-link.active,
+        .navbar-nav .nav-link:hover {
+            color: rgb(0, 140, 255);
+        }
+
+        .card-header {
+            background-color: #007bff; /* Mismo color de fondo que en el ejemplo */
+            color: white;
+        }
+
+        .btn-primary {
+            background-color: rgb(0, 140, 255);
+            border-color: rgb(0, 140, 255);
+        }
+
+        .btn-primary:hover {
+            background-color: rgb(0, 100, 200);
+            border-color: rgb(0, 100, 200);
+        }
+
+        /* Estilos para texto en negrita y color gris */
+.card-body, .navbar-nav .nav-link, .navbar-brand, .btn-custom {
+    font-weight: bold;
+    color: gray;
+    }
+    
+    /* Estilos para el menú */
+    .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link:hover {
+    color: rgb(0, 140, 255);
+    }
+        

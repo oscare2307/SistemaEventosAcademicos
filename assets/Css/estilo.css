@@ -1,0 +1,13 @@
+body {
+    background-color: #f8f9fa;
+    padding: 2rem;
+  }
+  .calendar-day {
+    aspect-ratio: 1 / 1;
+    background-color: #e9ecef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.25rem;
+  }
+  

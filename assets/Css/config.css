@@ -1,0 +1,207 @@
+body {
+    background-color: #f0f4f8;
+    font-family: 'Arial', sans-serif;
+}
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 10px 10px;
+}
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.nav-link {
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.nav-link:hover {
+    color: #0d6efd;
+}
+.card {
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    background-color: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+.card img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+.card img:hover {
+    transform: scale(1.1);
+}
+.btn-custom {
+    border-radius: 50px;
+    transition: background-color 0.3s, color 0.3s;
+    padding: 10px 25px;
+}
+.btn-custom:hover {
+    background-color: #0d6efd;
+    color: white;
+}
+.text-muted {
+    color: #6c757d !important;
+}
+.text-center {
+    text-align: center;
+}
+/* Animación de entrada para el formulario */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Animación de desvanecimiento */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos para la sección del perfil */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    border-radius: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+.form-control:focus {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    border-color: #0d6efd;
+}
+
+.input-group-text {
+    border-radius: 1rem;
+}
+
+/* Estilos para los botones de acción */
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+/* Contorno y sombra para los elementos del menú de configuración */
+.card {
+border-radius: 1rem; /* Bordes redondeados */
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra suave */
+margin-top: 20px;
+background-color: #ffffff;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+transform: scale(1.02); /* Escala al pasar el ratón */
+box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15); /* Sombra más prominente */
+}
+
+/* Contorno y efectos de la imagen del perfil */
+.card img {
+border-radius: 50%;
+width: 120px;
+height: 120px;
+object-fit: cover;
+margin-bottom: 20px;
+transition: transform 0.3s ease;
+}
+
+.card img:hover {
+transform: scale(1.1); /* Efecto de escala al pasar el ratón */
+}
+
+/* Estilos del formulario de configuración */
+.form-container {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+flex-direction: column;
+animation: fadeIn 1s ease-out; /* Animación de desvanecimiento */
+}
+
+/* Animación de desvanecimiento */
+@keyframes fadeIn {
+from {
+opacity: 0;
+transform: translateY(50px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+/* Estilo de los campos de entrada */
+.form-control {
+border-radius: 1rem; /* Bordes redondeados */
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+transition: all 0.3s ease; /* Transición para el foco */
+}
+
+.form-control:focus {
+box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra más intensa al hacer foco */
+border-color: #0d6efd; /* Color azul del borde cuando tiene foco */
+}
+
+/* Estilos para los botones */
+.btn-primary {
+background-color: #0d6efd;
+border-color: #0d6efd;
+border-radius: 50px; /* Botones redondeados */
+transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+background-color: #0056b3; /* Color más oscuro al pasar el ratón */
+border-color: #004085; /* Borde más oscuro al pasar el ratón */
+}
+
+/* Estilo para las etiquetas y el contenido de los campos */
+.form-group {
+margin-bottom: 15px;
+}
+
+.input-group-text {
+border-radius: 1rem; /* Bordes redondeados para los iconos de los campos */
+}
+
+/* Estilos para texto en negrita y color gris */
+.card-body, .navbar-nav .nav-link, .navbar-brand, .btn-custom {
+font-weight: bold;
+color: gray;
+}
+
+/* Estilos para el menú */
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+color: rgb(0, 140, 255);
+}

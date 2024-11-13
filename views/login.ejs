@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/Css/login.css">
+    <title>Login Y Registro</title>
+</head>
+<body>
+  
+    <main>
+
+      <div class="contenedor__todo">
+
+        <div class="caja__trasera">
+            <div class="caja__trasera-login">
+                <h3>¿Ya tienes una cuenta?</h3>
+                <p>Inicia sesion para acceder a la pagina</p>
+                <button id="btn__iniciar-sesion">Iniciar sesion</button>
+            </div>
+            <div class="caja__trasera-register">
+                <h3>¿Aun no tienes cuenta?</h3>
+                <p>Registrate para que puedas Iniciar sesion</p>
+                <button id="btn__registrarse">Registrarse</button>
+            </div>
+        </div>
+<!--Formulario de login y register-->
+        <div class="contenedor__login-register">
+<!--Login-->
+            <form id="loginForm" action="/iniciarsesion" class="formulario__login" method="post">
+<!--Registrarse-->
+                <h2>Iniciar sesion</h2>
+                <input type="email" placeholder="Correo Electronico" name="Correo_electronico" id="Correo_electronico" required>
+                <input type="password" placeholder="Contraseña" name="contraseña" id="contraseña" required>
+                <button type="submit">Entrar</button>
+
+            </form>
+<!-- Se agrego un form-->
+            <form id="registerForm" action="/validar" class="formulario__register" method="post">
+                <h2>Registrarse</h2>
+                <input type="text" placeholder="Nombre Completo" name= "nombre_completo" id="nombre_completo" required>
+                <input type="email" placeholder="Correo Electronico" name= "Correo_electronico" id="Correo_electronico" required>
+                <input type="text" placeholder="Usuario" name="usuario" id="usuario" required>
+                <input type="password" placeholder="Contraseña" name ="contraseña" id="contraseña" required>
+                <button type="submit">Registrarse</button>
+            </form>
+
+        </div>
+
+     </div>      
+    
+    </main>
+    
+<script src="../assets/Js/login.js"></script>
+<script src="../assets/Js/scriptrutalogin.js"></script>
+</body>
+</html>
